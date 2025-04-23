@@ -3,9 +3,8 @@ export default function getResponseFromAPI() {
     const success = true;
     if (success) {
       resolve('Promise resolved');
-    }
-    else {
-      reject('Error');
+    } else {
+      reject(new Error('Promise rejected'));
     }
   });
 }
